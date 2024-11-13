@@ -1,0 +1,124 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos del Header */
+.header {
+    background-color: #ff7f7f;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Sección Intro */
+.intro {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideUp 2s ease-out;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Sección Relationship */
+.relationship {
+    background-color: #ffebcd;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideUp 2.5s ease-out;
+}
+
+.relationship h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.relationship p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Estilos del Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro h2, .relationship h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro p, .relationship p {
+        font-size: 1rem;
+    }
+}
